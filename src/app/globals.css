@@ -4,4 +4,5 @@
 @theme inline {
   --font-iranSans: var(--font-iranSans);
   --font-geist: var(--font-geist);
+  --color-primary: #ed394e;
 }

@@ -12,6 +12,7 @@ const RootLayout = ({ children }: LayoutProps<"/">) => {
     <html
       lang="en"
       className={`${IranSans.variable} ${geist.variable} h-full font-iranSans antialiased`}
+      dir={'rtl'}
     >
       <body className="min-h-full flex flex-col">{children}</body>
     </html>
