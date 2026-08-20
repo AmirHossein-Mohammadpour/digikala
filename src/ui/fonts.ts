@@ -1,4 +1,5 @@
 import localFont from 'next/font/local';
+import { Geist } from 'next/font/google';
 
 const IranSans = localFont({
   src: [
@@ -7,7 +8,12 @@ const IranSans = localFont({
     {path: "../assets/fonts/IRANSansXFaNum-Medium.ttf", weight: '500'},
     {path: "../assets/fonts/IRANSansXFaNum-Bold.ttf", weight: '700'},
   ],
-  variable: '--font-iranSans'
+  variable: '--font-iranSans',
 });
 
-export default IranSans;
+const geist = Geist({
+  subsets: ['latin'],
+  variable: '--font-geist'
+})
+
+export {IranSans, geist};

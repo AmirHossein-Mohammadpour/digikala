@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 // import { Geist, Geist_Mono } from "next/font/google";
-import IranSans from "@/ui/fonts";
+import { IranSans, geist } from "@/ui/fonts";
 import "./globals.css";
 
 // const geistSans = Geist({
@@ -22,7 +22,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
       lang="en"
-      className={`${IranSans.variable} h-full font-iranSans antialiased`}
+      className={`${IranSans.variable} ${geist.variable} h-full font-iranSans antialiased`}
     >
       <body className="min-h-full flex flex-col">{children}سلام</body>
     </html>
