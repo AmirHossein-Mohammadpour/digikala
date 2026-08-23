@@ -1,7 +1,11 @@
+import Link from "next/link";
+
 const MainLayout = ({children}: {children: LayoutProps<'/'>}) => {
   return (
     <>
-      <header>Header</header>
+      <header>
+        <Link href={`/login`} className={``}>LOGIN</Link>
+      </header>
       {children}
       <footer>Footer</footer>
     </>

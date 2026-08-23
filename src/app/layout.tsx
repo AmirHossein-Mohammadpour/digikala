@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { IranSans, geist } from "@/ui/fonts";
 import "./globals.css";
+import { ThemeProvider } from "next-themes";
+import ThemeToggle from "../ui/themeToggle";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -12,11 +14,17 @@ const RootLayout = ({ children }: LayoutProps<"/">) => {
     <html
       lang="en"
       className={`${IranSans.variable} ${geist.variable} h-full font-iranSans antialiased`}
-      dir={'rtl'}
+      dir={"rtl"}
+      suppressHydrationWarning
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full text-black dark:text-white bg-white dark:bg-black">
+        <ThemeProvider attribute={`data-theme`} defaultTheme={`system`}>
+          {children}
+          <ThemeToggle />
+        </ThemeProvider>
+      </body>
     </html>
   );
-}
+};
 
 export default RootLayout;
