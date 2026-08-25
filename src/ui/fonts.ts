@@ -1,14 +1,14 @@
 import localFont from 'next/font/local';
 import { Geist } from 'next/font/google';
 
-const IranSans = localFont({
+const IranYekan = localFont({
   src: [
-    {path: "../assets/fonts/IRANSansXFaNum-Light.ttf", weight: '300'},
-    {path: "../assets/fonts/IRANSansXFaNum-Regular.ttf", weight: '400'},
-    {path: "../assets/fonts/IRANSansXFaNum-Medium.ttf", weight: '500'},
-    {path: "../assets/fonts/IRANSansXFaNum-Bold.ttf", weight: '700'},
+    // {path: "../assets/fonts/IRANSansXFaNum-Light.ttf", weight: '300'},
+    {path: "../assets/fonts/IranYekan-Regular.woff", weight: '400'},
+    {path: "../assets/fonts/IranYekan-Medium.woff", weight: '500'},
+    {path: "../assets/fonts/IranYekan-Bold.woff", weight: '700'},
   ],
-  variable: '--font-iranSans',
+  variable: '--font-iranYekan',
 });
 
 const geist = Geist({
@@ -16,4 +16,4 @@ const geist = Geist({
   variable: '--font-geist'
 })
 
-export {IranSans, geist};
+export {IranYekan, geist};

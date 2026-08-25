@@ -1,9 +1,10 @@
 @import "tailwindcss";
 
 @theme inline {
-  --font-iranSans: var(--font-iranSans);
+  --font-iranYekan: var(--font-iranYekan);
   --font-geist: var(--font-geist);
   --color-primary: #ed394e;
+  --color-darkBg: #242424
 }
 
 @custom-variant dark (&:where([data-theme='dark'], [data-theme='dark'] *));
