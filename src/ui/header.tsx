@@ -5,17 +5,19 @@ import Link from "next/link";
 
 const Header = ({ children }: { children: React.ReactNode }) => {
   return (
-    <header className={`sticky top-0 z-10 bg-white dark:bg-darkBg shadow-sm shadow-black/50`}>
+    <header className={`sticky top-0 z-10 bg-white dark:bg-darkBg shadow-sm shadow-black/50 dark:shadow-black`}>
       <div className={`flex justify-between items-center ps-4 pe-2 py-3`}>
         <div className={`flex items-center gap-5`}>
-          <Link href={`#`} className={``}>
-            <Image
-              src={mainLogo}
-              alt={`دیجی‌کالا`}
-              className={`w-48.75 h-auto`}
-              loading={`eager`}
-            />
-          </Link>
+          <h1>
+            <Link href={`#`} className={``}>
+              <Image
+                src={mainLogo}
+                alt={`دیجی‌کالا`}
+                className={`w-48.75 h-auto`}
+                loading={`eager`}
+              />
+            </Link>
+          </h1>
           <div className={`h-11 px-4 flex items-center gap-2 text-xs bg-neutral-200 dark:bg-neutral-700 text-neutral-500 dark:text-neutral-400 rounded-full`}>
             <span>
               <Search/>
