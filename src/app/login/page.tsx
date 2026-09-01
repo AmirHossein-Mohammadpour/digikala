@@ -6,7 +6,7 @@ const LoginPage = () => {
   return (
     <div className={`h-screen w-screen flex justify-center items-center`}>
       <div
-        className={`border py-10 px-6 border-neutral-400 rounded-lg flex flex-col items-center gap-10 text-xs justify-between bg-neutral-50 dark:bg-neutral-950`}
+        className={`m-5 border py-10 px-6 border-neutral-400 rounded-lg flex flex-col items-center gap-10 text-xs justify-between bg-neutral-50 dark:bg-neutral-950`}
       >
         <Link href={`/`}>
           <Image src={logo} alt={`دیجی کالا`} className={`w-50 h-auto`} />

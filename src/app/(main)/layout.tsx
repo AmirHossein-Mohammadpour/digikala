@@ -7,7 +7,7 @@ import topBanner from "@/assets/images/main_page/fa39599ce966e4e981fbe9c44604a27
 const MainLayout = ({children}: {children: LayoutProps<'/'>}) => {
   return (
     <>
-      <div className={`h-15`}>
+      <div className={`h-9 lg:h-15`}>
         <Image
           src={topBanner}
           alt={"Top Banner"}
@@ -23,4 +23,4 @@ const MainLayout = ({children}: {children: LayoutProps<'/'>}) => {
   );
 }
 
-export default MainLayout;
+export default MainLayout;  
