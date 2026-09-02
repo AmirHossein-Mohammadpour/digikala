@@ -1,5 +1,5 @@
-import Header from "@/ui/header";
-import NavBar from "@/ui/navBar";
+import Header from "@/ui/header/header";
+import NavBar from "@/ui/header/navBar";
 import Image from "next/image";
 import topBanner from "@/assets/images/main_page/fa39599ce966e4e981fbe9c44604a272c1ccc96e_1719066045.gif";
 
@@ -23,4 +23,4 @@ const MainLayout = ({children}: {children: LayoutProps<'/'>}) => {
   );
 }
 
-export default MainLayout;  
+export default MainLayout;
