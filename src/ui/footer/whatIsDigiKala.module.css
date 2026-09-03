@@ -1,0 +1,36 @@
+.text h1{
+  font-size: 21px;
+  font-weight: 500;
+  line-height: 44px;
+  color: #62666d;
+}
+
+[data-theme='dark'] .text h1{
+  color: oklch(87% 0 none);
+}
+
+.text h2, .text h3{
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 34px;
+  color: #81858b;
+}
+
+[data-theme='dark'] .text h2, [data-theme='dark'] .text h3{
+  color: oklch(70.8% 0 none);
+}
+
+.text p{
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 26px;
+  color: #364153;
+}
+
+[data-theme='dark'] .text p {
+  color: #d1d5dc;
+}
+
+.text a{
+  color: oklch(62.3% 0.214 259.815);
+}

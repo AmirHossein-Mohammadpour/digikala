@@ -18,3 +18,17 @@ export type MegaMenuType =  {
     }[];
   }[][];
 }[];
+
+export type FooterGroup = {
+  title: string;
+  items: {
+    title: string;
+    href: string;
+  }[];
+};
+
+export type SocialLink = {
+  name: string;
+  href: string;
+  ariaLabel: string;
+};

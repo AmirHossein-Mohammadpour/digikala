@@ -2,6 +2,7 @@ import Header from "@/ui/header/header";
 import NavBar from "@/ui/header/navBar";
 import Image from "next/image";
 import topBanner from "@/assets/images/main_page/fa39599ce966e4e981fbe9c44604a272c1ccc96e_1719066045.gif";
+import Footer from "@/ui/footer/footer";
 
 
 const MainLayout = ({children}: {children: LayoutProps<'/'>}) => {
@@ -18,7 +19,7 @@ const MainLayout = ({children}: {children: LayoutProps<'/'>}) => {
         <NavBar/>
       </Header>
       {children}
-      <footer>Footer</footer>
+      <Footer/>
     </>
   );
 }
