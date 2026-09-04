@@ -25,7 +25,7 @@ const AboutDigiKala = () => {
           <ChevronLeft size={18}/>
         </button>
       </div>
-      <div className={`shrink-0 flex justify-center items-center gap-2`}>
+      <div className={`hidden shrink-0 lg:flex justify-center items-center gap-2`}>
         {namads.map((namad, index) => (
           <Link
             key={index}

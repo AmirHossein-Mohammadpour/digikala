@@ -16,7 +16,7 @@ const Features = () => {
     ];
   return (
     <div
-      className={`flex justify-between items-center py-3 text-[11px] text-gray-700 dark:text-gray-300`}
+      className={`hidden lg:flex justify-between items-center py-3 text-[11px] text-gray-700 dark:text-gray-300`}
     >
       {services.map((service, index) => (
         <Link

@@ -10,7 +10,7 @@ const Footer = () => {
   return (
     <footer className={`@container/footer`}>
       <div className={`flex flex-col gap-8 border-t mt-12 pt-8 border-neutral-200`}>
-        <div className={`px-5 flex flex-col gap-8 divide`}>
+        <div className={`px-5 flex flex-col gap-8`}>
           <ContactUs/>
           <Features/>
           <SiteMap/>
